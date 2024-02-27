@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+    <script>
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            b1 = document.getElementById('b1')
+            b1.addEventListener('click', function() {
+                textid = document.getElementById('text');
+                textid.style.color='red';
+                textid.style.textDecoration= 'underline';
+            })
+        });
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(event) {
+            $("#b2").on('click',function() {
+                $("#text").css('color','blue');
+                $("#text").css('text-decoration','overline');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="text">This is some sample text</div>
+    <input type="button" id="b1" value="change1">
+    <input type="button" id="b2" value="change2">
+</body>
