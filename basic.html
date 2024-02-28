@@ -1,0 +1,48 @@
+<style>
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        text-align:center;
+        border: 2px solid black;
+    }
+    td {
+        height: 125px;
+        border: 1px solid black;
+    }
+    div {
+        text-align:left;
+        font-size: 16px;
+        width: 500px;
+        margin:auto;
+        padding: 10px;
+    }
+    .nextLink {
+        text-decoration: none;
+        color: red;
+        font-size: 14px;
+        cursor: crosshair;
+    }
+    .nextLink:hover {
+        text-decoration: overline underline;
+        font-weight: bold;
+        color: blue;
+    }
+</style>
+
+<div>
+    Note that a link can be either text or an object like an image. By default the cursor changes to a pointer when you hover over the
+    link, and it is blue (if not visited) or purple (if it has been visited).
+    We can also change all of these properties using styles!
+</div>
+<table>
+    <tr>
+        <td><a href="https://www.google.com">This link goes to Google</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.google.com"><img src="google.webp"></a></td>
+    </tr>
+    <tr>
+        <td><a href="example.html" class="nextLink">Next example page.</a></td>
+    </tr>
+</table>
+

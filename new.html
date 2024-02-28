@@ -1,0 +1,57 @@
+<style>
+    #b {
+  display: none;
+}
+#catHover:hover ~ #cat {
+    opacity:1;
+}
+#dogHover:hover ~ #dog {
+    opacity:1;
+}
+#mouseHover:hover ~ #mouse {
+    opacity:1;
+}
+li {
+    list-style-type: none;
+        border: 1px solid blue;
+        color: red;
+        background-color: rgb(100,255,100);
+        width: 100px;
+        height: 40px;
+        text-align:center;
+        transition: 0.25s;
+        vertical-align: middle;
+        line-height:40px;
+    }
+    li:hover {
+        font-weight:bold;
+        color: black;
+        background-color: yellow;
+    }
+    #cat, #dog, #mouse {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 125px;
+        top: 10px;
+        border:1px solid black;
+        display: block;
+        text-align:center;
+        opacity: 0;
+        transition: 2.5s;
+    }
+
+</style>
+<div id="catHover"><li>Cat</li></div>
+<div id="dogHover"><li>Dog</li></div>
+<div id="mouseHover"><li>Mouse</li></div>
+
+<div id="cat">
+    <img src="cat.png">
+ </div>
+ <div id="dog">
+    <img src="dog.png">
+ </div>
+ <div id="mouse">
+    <img src="mouse.png">
+ </div>

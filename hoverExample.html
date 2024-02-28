@@ -1,0 +1,55 @@
+<style>
+    li {
+        list-style-type: none;
+        border: 1px solid blue;
+        color: red;
+        background-color: rgb(100,255,100);
+        width: 100px;
+        height: 40px;
+        text-align:center;
+        transition: 0.25s;
+        vertical-align: middle;
+        line-height:40px;
+    }
+    li:hover {
+        font-weight:bold;
+        color: black;
+        background-color: yellow;
+    }
+
+    #cat, #dog, #mouse {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 125px;
+        top: 10px;
+        background-color: rgb(99, 113, 27);
+        border:1px solid black;
+        display: block;
+        opacity: 1;
+    }
+    #catHover:hover ~ #cat {
+        background-color: #ccc;
+    }
+    #dogHover:hover ~ #dog {
+        display: block;
+        opacity:1;
+    }
+    #mouseHover:hover ~ #mouse {
+        background-color: #ccc;
+    }
+</style>
+<div id="menu">
+    <a id="catHover"><li>Cat</li></a>
+    <a id="dogHover"><li>Dog</li></a>
+    <div id="mouseHover">Mouse</div>
+</div>
+<div id="cat">
+    Cat
+</div>
+<div id="dog">
+    Dog
+</div>
+<div id="mouse">
+   Mouse 
+</div>
